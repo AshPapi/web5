@@ -22,7 +22,7 @@
             }
 
             // Рассчитываем общую стоимость
-            const total = quantity * Math.abs(price);
+            const total = quantity * price;
 
             // Выводим результат
             document.getElementById('total').innerText = 'Итого: ' + total + " рублей";
@@ -57,7 +57,7 @@
                 
                 <div class="form-group">
                     <label for="quantity">Количество:</label>
-                    <input type="number" class="form-control" id="quantity" placeholder="Введите количество товара">
+                    <input type="number" class="form-control" id="quantity" pattern="\d [0-9]" placeholder="Введите количество товара">
                 </div>
                 
                 <div class="d-flex justify-content-between align-items-center">
