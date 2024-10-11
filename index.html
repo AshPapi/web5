@@ -8,7 +8,7 @@
     <script>
          function calculator() {
             // Получаем количество товара и выбранный товар
-            const quantity = document.getElementById('quantity').value;
+            const quantity = Math.abs(document.getElementById('quantity').value);
             const product = document.getElementById('product').value;
             
             // Устанавливаем цены на товары
@@ -57,7 +57,7 @@
                 
                 <div class="form-group">
                     <label for="quantity">Количество:</label>
-                    <input type="number" class="form-control" id="quantity" pattern="\d [0-9]" placeholder="Введите количество товара">
+                    <input type="number" class="form-control" id="quantity" placeholder="Введите количество товара">
                 </div>
                 
                 <div class="d-flex justify-content-between align-items-center">
