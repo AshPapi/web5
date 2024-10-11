@@ -22,7 +22,7 @@
             }
 
             // Рассчитываем общую стоимость
-            const total = quantity * abs(price);
+            const total = quantity * Math.abs(price);
 
             // Выводим результат
             document.getElementById('total').innerText = 'Итого: ' + total + " рублей";
